@@ -17,11 +17,6 @@ pipeline {
         sh 'npm install'
       }
     }
-    stage('Start Application 2') {
-      steps {
-        sh 'node .'
-      }
-    }
     stage('Start Test') {
       steps {
         sh 'npm test'
